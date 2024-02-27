@@ -300,47 +300,47 @@ border-radius: 0; }
 #mercury .pos,
 #mercury .planet,
 #mercury.orbit {
-  animation-duration: 9.89016s; }
+  animation-duration: 12s; }
 
 #venus .pos,
 #venus .planet,
 #venus.orbit {
-  animation-duration: 7.38237s; }
+  animation-duration: 12s; }
 
 #earth .pos,
 #earth .planet,
 #earth.orbit {
-  animation-duration: 12.00021s; }
+  animation-duration: 12s; }
 
 #earth .orbit .pos,
 #earth .orbit {
-  animation-duration: 0.89764s; }
+  animation-duration: 12s; }
 
 #mars .pos,
 #mars .planet,
 #mars.orbit {
-  animation-duration: 22.57017s; }
+  animation-duration: 12s; }
 
 #jupiter .pos,
 #jupiter .planet,
 #jupiter.orbit {
-  animation-duration: 32.35138s; }
+  animation-duration: 12s; }
 
 #saturn .pos,
 #saturn .planet,
 #saturn.orbit,
 #saturn .ring {
-  animation-duration: 50.36998s; }
+  animation-duration: 12s; }
 
 #uranus .pos,
 #uranus .planet,
 #uranus.orbit {
-  animation-duration: 90.20215s; }
+  animation-duration: 18s; }
 
 #neptune .pos,
 #neptune .planet,
 #neptune.orbit {
-  animation-duration: 130.49584s; }
+  animation-duration: 12s; }
 
 /* --------------------------------------------------------------------------- planets sizes */
 /* --------------------------------------------------------------------------- stretched sizes */
