@@ -1116,7 +1116,7 @@ h1 {
     @keyframes glow {
       0% {
         filter:
-        drop-shadow( 3px 3px 10px #cacfb2);
+        drop-shadow( 3px 3px 20px #cacfb2);
         
       }
       100% {
