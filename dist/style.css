@@ -1126,7 +1126,7 @@ h1 {
     } 
     
     .planet {
-      animation: glow 2s infinite alternate-reverse;
+      animation: glow 1s infinite alternate-reverse;
     }
 
 
