@@ -1124,6 +1124,9 @@ h1 {
         drop-shadow( 0px 0px 0px #cacfb2);
       }
     } 
+    #sun{
+      animation: glow 1s infinite alternate-reverse;
+    }
     
     .planet {
       animation: glow 1s infinite alternate-reverse;
