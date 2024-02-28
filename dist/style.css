@@ -1123,7 +1123,7 @@ h1 {
         filter:
         drop-shadow( 0px 0px 0px #cacfb2);
       }
-    }
+    } 
     
     .planet {
       animation: glow 2s infinite alternate-reverse;
