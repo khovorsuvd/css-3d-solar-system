@@ -1,41 +1,17 @@
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body{
+ 
+  
+
   margin: 0;
   padding: 0; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
 
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
+  .zoom-large {
   font-size: 10px;
-  font-family: sans-serif;
-  font-weight: 300;
-  background-color: #110A1D; }
+ 
+
+ }
 
 #universe {
   z-index: 1;
@@ -85,7 +61,7 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
-#sun, .planet, #earth .moon {
+#sun, .planet, #earth {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -125,31 +101,30 @@ border-radius: 0; }
   z-index: 10; }
 
 #venus {
-  z-index: 9; }
+  z-index: 90; }
 
 #earth {
-  z-index: 8; }
+  z-index: 80; }
 
-#moon {
-  z-index: 7; }
+
 
 #mars {
-  z-index: 6; }
+  z-index: 60; }
 
 #jupiter {
-  z-index: 5; }
+  z-index: 50; }
 
 #saturn {
-  z-index: 4; }
+  z-index: 40; }
 
 #uranus {
-  z-index: 3; }
+  z-index: 30; }
 
 #neptune {
-  z-index: 2; }
+  z-index: 20; }
 
 #sun {
-  z-index: 1; }
+  z-index: 10; }
 
 /* --------------------------------------------------------------------------- animations */
 @keyframes orbit {
@@ -188,20 +163,7 @@ border-radius: 0; }
 #universe.opening #sun {
   box-shadow: 0 0 0 rgba(255, 160, 60, 0); }
 
-/* --------------------------------------------------------------------------- 2D view */
-.view-2D.zoom-large #sun {
-  transform-style: flat; }
 
-.view-2D.zoom-large .orbit {
-  transform-style: flat; }
-
-.view-2D #sun,
-.view-2D .ring {
-  transform: rotateX(0deg); }
-
-.view-2D .planet,
-.view-2D .moon {
-  transform: rotateX(90deg); }
 
 /* --------------------------------------------------------------------------- 3D view */
 .view-3D.zoom-large #sun {
@@ -246,18 +208,7 @@ border-radius: 0; }
   font-size: 14%; }
 
 /* --------------------------------------------------------------------------- close zoom */
-.zoom-close #solar-system {
-  width: 200%;
-  font-size: 100%; }
 
-.zoom-close .scale-stretched #solar-system {
-  margin-left: -100%; }
-
-.zoom-close .scale-d #solar-system {
-  margin-left: -106%; }
-
-.zoom-close.view-2D .scale-d #solar-system {
-  font-size: 84%; }
 
 .zoom-close.view-3D .scale-d #solar-system {
   font-size: 84%; }
@@ -344,35 +295,6 @@ border-radius: 0; }
 
 /* --------------------------------------------------------------------------- planets sizes */
 /* --------------------------------------------------------------------------- stretched sizes */
-.scale-stretched #sun {
-  font-size: 60em; }
-
-.scale-stretched #mercury .planet {
-  font-size: 1.5em; }
-
-.scale-stretched #venus .planet {
-  font-size: 3.72em; }
-
-.scale-stretched #earth .planet {
-  font-size: 3.92em; }
-
-.scale-stretched #earth .moon {
-  font-size: 1.2em; }
-
-.scale-stretched #mars .planet {
-  font-size: 2.9em; }
-
-.scale-stretched #jupiter .planet {
-  font-size: 12em; }
-
-.scale-stretched #saturn .planet {
-  font-size: 10.8em; }
-
-.scale-stretched #uranus .planet {
-  font-size: 4.68em; }
-
-.scale-stretched #neptune .planet {
-  font-size: 4.9em; }
 
 /* --------------------------------------------------------------------------- scaled sizes */
 /*
@@ -380,35 +302,6 @@ border-radius: 0; }
 */
 /*$distanceScaleRatio:   0.000075em;*/
 /* --------------------------------------------------------------------------- planets distance scale sizes */
-.scale-d #sun {
-  font-size: 41.73048em; }
-
-.scale-d #mercury .planet {
-  font-size: 0.14634em; }
-
-.scale-d #venus .planet {
-  font-size: 0.36306em; }
-
-.scale-d #earth .planet {
-  font-size: 0.38226em; }
-
-.scale-d #earth .moon {
-  font-size: 0.18226em; }
-
-.scale-d #mars .planet {
-  font-size: 0.20334em; }
-
-.scale-d #jupiter .planet {
-  font-size: 4.19466em; }
-
-.scale-d #saturn .planet {
-  font-size: 3.49392em; }
-
-.scale-d #uranus .planet {
-  font-size: 1.52172em; }
-
-.scale-d #neptune .planet {
-  font-size: 1.47732em; }
 
 /* --------------------------------------------------------------------------- planet size scale sizes */
 .scale-s #sun {
@@ -441,116 +334,11 @@ border-radius: 0; }
   font-size: 180em; }
 
 /* --------------------------------------------------------------------------- stretched orbits */
-.scale-stretched #mercury.orbit {
-  width: 32em;
-  height: 32em;
-  margin-top: -16em;
-  margin-left: -16em; }
 
-.scale-stretched #venus.orbit {
-  width: 40em;
-  height: 40em;
-  margin-top: -20em;
-  margin-left: -20em; }
-
-.scale-stretched #earth.orbit {
-  width: 56em;
-  height: 56em;
-  margin-top: -28em;
-  margin-left: -28em; }
-
-.scale-stretched #earth .orbit {
-  width: 6em;
-  height: 6em;
-  margin-top: -3em;
-  margin-left: -3em; }
-
-.scale-stretched #mars.orbit {
-  width: 72em;
-  height: 72em;
-  margin-top: -36em;
-  margin-left: -36em; }
-
-.scale-stretched #jupiter.orbit {
-  width: 100em;
-  height: 100em;
-  margin-top: -50em;
-  margin-left: -50em; }
-
-.scale-stretched #saturn.orbit {
-  width: 150em;
-  height: 150em;
-  margin-top: -75em;
-  margin-left: -75em; }
-
-.scale-stretched #uranus.orbit {
-  width: 186em;
-  height: 186em;
-  margin-top: -93em;
-  margin-left: -93em; }
-
-.scale-stretched #neptune.orbit {
-  width: 210em;
-  height: 210em;
-  margin-top: -105em;
-  margin-left: -105em; }
 
 /* --------------------------------------------------------------------------- scaled orbits */
 /* --------------------------------------------------------------------------- distance scale orbits */
-.scale-d #mercury.orbit {
-  width: 44.74176em;
-  height: 44.74176em;
-  margin-top: -22.37088em;
-  margin-left: -22.37088em; }
 
-.scale-d #venus.orbit {
-  width: 47.35737em;
-  height: 47.35737em;
-  margin-top: -23.67869em;
-  margin-left: -23.67869em; }
-
-.scale-d #earth.orbit {
-  width: 49.50959em;
-  height: 49.50959em;
-  margin-top: -24.75479em;
-  margin-left: -24.75479em; }
-
-.scale-d #mars.orbit {
-  width: 53.58356em;
-  height: 53.58356em;
-  margin-top: -26.79178em;
-  margin-left: -26.79178em; }
-
-.scale-d #jupiter.orbit {
-  width: 82.2042em;
-  height: 82.2042em;
-  margin-top: -41.1021em;
-  margin-left: -41.1021em; }
-
-.scale-d #saturn.orbit {
-  width: 115.91713em;
-  height: 115.91713em;
-  margin-top: -57.95857em;
-  margin-left: -57.95857em; }
-
-.scale-d #uranus.orbit {
-  width: 191.00471em;
-  height: 191.00471em;
-  margin-top: -95.50235em;
-  margin-left: -95.50235em; }
-
-.scale-d #neptune.orbit {
-  width: 275.64709em;
-  height: 275.64709em;
-  margin-top: -137.82355em;
-  margin-left: -137.82355em; }
-
-/* Moon */
-.scale-d #earth .orbit {
-  width: 1em;
-  height: 1em;
-  margin-top: -0.5em;
-  margin-left: -0.5em; }
 
 /* --------------------------------------------------------------------------- size scale orbits */
 .scale-s #mercury.orbit {
@@ -659,25 +447,7 @@ border-radius: 0; }
   top: 50%; }
 
 
-/* --------------------------------------------------------------------------- saturn ring */
-/*
 
-#saturn .ring           { animation-name:     shadow-saturn-ring; }
-
-@keyframes 
-shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50, 0.45); opacity: .4; }
-                  25%    { box-shadow: inset -5px   -30px   12px  rgba(20, 40, 50, 0.3);  opacity: 1; }
-                  25.01% { box-shadow: inset 5px    -30px   12px  rgba(20, 40, 50, 0.3);  opacity: 1; }
-                  50%    { box-shadow: inset 16px   0      4px   rgba(20, 40, 50, 0.45);  opacity: .4; }
-                  75%    { box-shadow: inset 0      30px  50px  rgba(20, 40, 50, 0);  opacity: .3; }
-                  100%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50, 0.45);  opacity: .4; }
-                }
-
-.scaled.view-2D #saturn .ring,
-.scaled.view-3D #saturn .ring { box-shadow: inset 16px   0      4px   rgba(20, 40, 50, 0.6); }
-
-*/
-/* --------------------------------------------------------------------------- uranus ; pos: Left */
 #uranus .pos {
   left: 0;
   top: 50%; }
@@ -692,66 +462,8 @@ shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50
 
 
 
-/* --------------------------------------------------------------------------- DEBUG 
-.pos, 
-.planet, 
-.orbit,
-.ring { animation-duration: 20s!important; }
 
-/* */
-/* --------------------------------------------------------------------------- navigation styles */
-dl.infos {
-  position: absolute;
-  display: block;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin-top: -90%;
-  margin-left: 90%;
-  padding-left: 100%;
-  transform-origin: 100% 100%;
-  transform-style: preserve-3d;
-  transform: rotateX(90deg); }
 
-dl.infos:before {
-  position: absolute;
-  content: '';
-  width: 15px;
-  height: 30px;
-  left: 15px;
-  bottom: 0;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  transform-style: preserve-3d;
-  transform: skew(-45deg, 0deg);
-  box-shadow: inset 1px 1px black; }
-
-dl.infos dt {
-  position: absolute;
-  left: 50px;
-  margin-bottom: 26px;
-  bottom: 30px;
-  color: #FFF;
-  font-size: 14px;
-  text-shadow: 1px 1px 2px black; }
-
-dl.infos dd:after {
-  position: absolute;
-  left: 50px;
-  bottom: 30px;
-  width: 300px;
-  color: #FFF;
-  font-size: 22px;
-  text-shadow: 1px 1px 2px black; }
-
-dl.infos dd span:after {
-  position: absolute;
-  left: 50px;
-  bottom: 14px;
-  width: 300px;
-  color: #FFF;
-  font-size: 11px;
-  text-shadow: 1px 1px 2px black; }
 
 .sun #sun .infos,
 .mercury #mercury .infos,
@@ -776,186 +488,9 @@ dl.infos dd span:after {
 .neptune #neptune.orbit {
   border: 1px solid rgba(255, 255, 255, 0.8); }
 
-.hide-UI h1,
-.hide-UI #data,
-.hide-UI dl.infos,
-.hide-UI #controls {
-  opacity: 0!important;
-  margin-top: -30px; }
-
-.hide-UI #data {
-  margin-bottom: -30px; }
-
-.hide-UI .orbit {
-  border: 1px solid rgba(255, 255, 255, 0.2) !important; }
 
 
 
-
-#navbar, #controls, #data {
-  background: rgba(0, 0, 0, 0.4); }
-
-#navbar {
-  z-index: 99;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 16px;
-  width: 100%;
-  height: 48px; }
-
-#navbar a, #data a, #controls label {
-  color: rgba(255, 255, 255, 0.6);
-  display: block;
-  position: relative;
-  text-decoration: none; }
-
-#navbar a:hover, #data a:hover, #controls label:hover {
-  color: #FFF; }
-
-#data a.active {
-  color: #0CF; }
-
-#navbar a {
-  position: absolute;
-  top: 0;
-  height: 48px;
-  padding: 16px;
-  font-size: 14px; }
-
-#toggle-data {
-  left: 0; }
-
-#toggle-controls {
-  right: 0; }
-
-#data, #controls {
-  z-index: 99;
-  position: fixed;
-  opacity: 1;
-  top: 49px;
-  padding: 16px; }
-
-.data-close #data {
-  left: -100%; }
-
-.data-open #data {
-  left: 0px; }
-
-.controls-close #controls {
-  right: -100%; }
-
-.controls-open #controls {
-  right: 0px; }
-
-#data a {
-  margin-bottom: 1px;
-  padding: 6px 10px;
-  font-size: 18px; }
-
-#controls label {
-  opacity: .6;
-  height: 24px;
-  margin-bottom: 28px; }
-
-#controls label:hover {
-  opacity: 1; }
-
-#controls label:before {
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin-top: 3px;
-  text-align: center;
-  color: #FFF;
-  z-index: 99; }
-
-#controls label span {
-  display: block;
-  margin-left: 36px;
-  padding-top: 4px;
-  font-size: 18px;
-  color: #FFF; }
-
-#controls input {
-  display: block;
-  appearance: none; }
-
-#controls input[type="radio"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  border: 2px solid #FFF;
-  border-radius: 16px; }
-
-#controls input:checked[type="radio"]:after {
-  content: '';
-  display: block;
-  top: 3px;
-  margin-left: 3px;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: #FFF;
-  z-index: 99; }
-
-#controls input[type="checkbox"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100px;
-  height: 22px;
-  border: 2px solid #FFF;
-  border-radius: 16px; }
-
-#controls input[type="checkbox"]:after {
-  content: '';
-  display: block;
-  top: 3px;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: #FFF;
-  z-index: 99; }
-
-#controls label.set-view:before {
-  font: bold small-caps 11px/20px sans-serif; }
-
-.view-3D #controls label.set-view:before {
-  content: '2D';
-  margin-left: 82px; }
-
-.view-2D #controls label.set-view:before {
-  content: '3D';
-  margin-left: 7px; }
-
-.view-3D #controls .set-view input:after {
-  margin-left: 3px; }
-
-.view-2D #controls .set-view input:after {
-  margin-left: 81px; }
-
-#controls label.set-zoom:before {
-  font: normal small-caps 18px/14px sans-serif; }
-
-.zoom-large #controls label.set-zoom:before {
-  content: '+';
-  margin-left: 82px; }
-
-.zoom-close #controls label.set-zoom:before {
-  content: '-';
-  margin-left: 7px; }
-
-.zoom-large #controls .set-zoom input:after {
-  margin-left: 3px; }
-
-.zoom-close #controls .set-zoom input:after {
-  margin-left: 81px; }
 
 /* --------------------------------------------------------------------------- transitions */
 .pos {
@@ -1010,19 +545,7 @@ dl.infos dd span:after {
 .opening .pos {
   transition-delay: 0s; }
 
-h1, #data, #controls {
-  transition-property: opacity, margin;
-  transition-duration: .8s;
-  transition-timing-function: ease-in-out; }
 
-h1 {
-  transition-delay: .35s; }
-
-#data {
-  transition-delay: .7s; }
-
-#controls {
-  transition-delay: 1s; }
 
 /* --------------------------------------------------------------------------- images */
 
@@ -1068,38 +591,7 @@ h1 {
   #universe {
     font-size: 73%; }
 
-  #navbar, #controls, #data {
-    background: transparent; }
-
-  #navbar a {
-    display: none; }
-
-  h1 {
-    font-size: 22px;
-    margin-top: 8px; }
-
-  #controls {
-    padding-right: 32px;
-    top: 12px; }
-
-  #data {
-    position: fixed;
-    top: inherit;
-    bottom: 0;
-    width: 100%;
-    text-align: center; }
-
-  #data a {
-    display: inline-block;
-    text-align: center;
-    font-size: 20px;
-    padding: 15px 15px; }
-
-  .data-open #data, .data-close #data {
-    left: 0px; }
-
-  .controls-open #controls, .controls-close #controls {
-    right: 0px; } }
+}
 @media screen and (min-width: 1300px) {
   #universe {
     font-size: 100%; } }
